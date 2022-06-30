@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array Sort</h2>
+    <p>The highest number is <span id="max"></span>.</p>
+
+    <p>The lowest number is <span id="min"></span>.</p>
+
+    <script>
+        const p = [40, 100, 1, 5, 25, 10];
+        document.getElementById("max").innerHTML = myArrayMax(p);
+
+        function myArrayMax(arr) {
+            return Math.max.apply(null, arr);
+        }
+
+        //const ps = [40, 100, 1, 5, 25, 10];
+        document.getElementById("min").innerHTML = myArrayMin(p);
+
+        function myArrayMin(arr) {
+            return Math.min.apply(null, arr);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+/* h1,
+div,
+span,
+a,
+b,
+label,
+strong {
+    border: 2px solid green;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/html/Day2/img/picture/form-background.webp");
+    /* box-shadow:; */
+}
+
+h1 {
+    color: aliceblue;
+    /* text-align: center; */
+}
+
+label {
+    color: cyan;
+    font-family: 'Courier New';
+    font-style: inherit;
+}
+
+#head {
+    text-align: center;
+}
+
+.r,
+.l {
+    font-size: 30px;
+    color: rgb(0, 255, 76);
+}
+
+.F {
+    color: orange;
+    font-size: 30px;
+}

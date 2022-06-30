@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form payment</title>
+</head>
+<body>
+
+	<form action="">
+	<fieldset>
+		<legend><h1>Payment Form</h1></legend>
+		<h2>Contact Information</h2>
+		<p>Name:<input type="text" name="name"></p>
+		<p>Male<input type="radio" name="gen" id="Male"></p>
+		<p>Female<input type="radio" name="gen" id="Female"></p>
+	</fieldset>	
+			<P>Card Type:
+			<select name="card_type" id="card">
+			<option value="">--Select a Card Type</option>
+			<option value="visa">Visa</option>
+			<option value="paypal">paypal</option>
+			<option value="paypal">Master card</option>
+			</select></P>
+	 		<p>
+			Card Number:<input type="text" name="card_num">
+		</p>
+		<p>
+			  Exp. Date: <input type="text" name="exp_Date" id="exp_date">
+		</p>
+
+		<p>CVV <input type="password" name="cvv" id="cvv"></p>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>

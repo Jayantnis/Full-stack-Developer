@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.he {
+  position: relative;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(6, 166, 206);
+  color: white;
+}
+
+.logo {
+  height: 39px;
+  width: 96px;
+  padding-left: 5px;
+  margin-top: 4px;
+  border-radius: 17px;
+  padding-bottom: 0px;
+}
+
+.topnav a {
+  float: right;
+  background-color: rgb(6, 166, 206);
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* under space recover */
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #4bff4b;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  border-radius: 3px;
+  transition-duration: 1s;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(6, 166, 206);
+  color: white;
+}
+
+h1 {
+  color: rgb(6, 166, 206);
+}
+
+/* special case */
+/* padding */
+fieldset {
+  padding-left: 50px;
+  margin-left: 0px;
+  /* text-align: center; */
+  font-size: 20px;
+  font-family: "Times New Roman";
+  background: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* call .-> class , and #->id's */
+.f {
+  color: red;
+}
+
+/* submit button selection */
+table {
+  padding: 20px;
+}
+
+.rest,
+.cancelbtn,
+.signupbtn {
+  background-color: #dee81a;
+  color: rgb(24, 83, 128);
+  padding: 20px;
+  margin: 20px;
+}
+
+.rest:hover,
+.cancelbtn:hover,
+.signupbtn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Responsive selection */
+.box {
+  font-size: 72px;
+  text-align: center;
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  display: none;
+}
+
+@media (max-width: 300px) {
+  #box-1 {
+    display: block;
+    background-color: rgb(217, 197, 62);
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  #box-2 {
+    display: block;
+    background-color: blue;
+  }
+}
+@media (min-width: 800px) and (max-width: 1140px) {
+  #box-3 {
+    display: block;
+    background-color: cornflowerblue;
+  }
+}
+@media (max-width: 1140px) {
+  #box-4 {
+    display: block;
+    background-color: rgb(141, 223, 141);
+    color: rgb(94, 138, 219);
+  }
+}
+.container {
+  padding: 100px;
+  margin: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  background: url("../img/footboll.png");
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: contain;
+  border-radius: 300px;
+  width: 0px;
+  height: 3px;
+  transform: translate(50px, 50px);
+  transform: rotate(90deg);
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.container:hover {
+  transform: translate(0cm, 11.7cm);
+  border-radius: 2px solid blue;
+}
+
+/*# sourceMappingURL=main.css.map */
+.con {
+  margin: 5px;
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff1f1;
+  background-color: #0446aa;
+}
+
+.con:hover {
+  background-color: palevioletred;
+  border-top-right-radius: 45px;
+}
+
+span:hover {
+  background: lightblue;
+  border-radius: 54%;
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+}/*# sourceMappingURL=main.css.map */

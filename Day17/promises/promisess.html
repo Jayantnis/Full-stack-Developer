@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        //<!-- let complete = false; -->
+        function prom(complete) {
+            return new Promise(function(resolve, reject) {
+                console.log("Fecting data , please wait.");
+                /*if (complete) {
+                    resolve("this is successful");
+                } else {
+                    reject("this is Not complete");
+                }*/
+                setTimeout(() => {
+                    if (complete) {
+                        resolve("this is successful");
+                    } else {
+                        reject("this is Not complete");
+                    }
+
+                })
+            }, 3000); //which time start in milli second 
+        };
+
+
+        let onfulfill = (on_fill_result) => {
+            console.log(on_fill_result)
+        }
+        let onfulfill_reject = (off_fill_result) => {
+                console.log(off_fill_result)
+            }
+            /*prom(true).then(onfulfill);
+            prom(true).catch(onfulfill_reject);
+            */
+            //prom(false).then(onfulfill).catch(onfulfill_reject);
+        prom(true).then(onfulfill).catch(onfulfill_reject);
+
+
+        //console.log(prom(true));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

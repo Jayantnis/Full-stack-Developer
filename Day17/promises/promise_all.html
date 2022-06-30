@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise.all()</title>
+
+    <script>
+        let p1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("the first Promise has resolve");
+                resolve(10);
+            }, 1 * 1000);
+        });
+
+
+        let p2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("the second Promise has resolve");
+                //                resolve(20);
+
+                //  reject()
+            }, 2 * 1000);
+        });
+
+        let p3 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("the Third Promise has resolve");
+                resolve(30); //if reject than all reject
+            }, 3 * 1000);
+        });
+
+        Promise.all([p1], [p2], [p3]).then((result) => {
+            for (var i in result) {
+                total += result[i];
+            }
+            console.log(`result: ${result}`)
+            console.log(`Total: ${total}`)
+
+        }).catch((error) => {
+            console.log(`result: ${error}`)
+        });
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

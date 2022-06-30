@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array.filter()</h2>
+    <p>Creates a new array with all array elements that passes a test.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        var ages = [10, 12, 19, 20];
+        document.write(ages + "<br>");
+
+        var b = ages.filter(check);
+        document.write(b + "<br>");
+
+        function check(ages) {
+            return ages >= 18; //condition check 
+        }
+    </script>
+
+</body>
+
+</html>

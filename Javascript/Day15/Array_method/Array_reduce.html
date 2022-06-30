@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Array.reduce()</h2>
+
+
+    <script>
+        const numb = [23, 43, 54, 65, 6];
+
+        let sum = numb.reduce(myfn);
+        console.log(sum);
+
+        function myfn(total, value, index, array) {
+            return total + value;
+        }
+    </script>
+
+</body>
+
+</html>

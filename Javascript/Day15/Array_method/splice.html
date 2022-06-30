@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>JavaScript Arrays</h1>
+    <h2>The join() Method</h2>
+
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo2").innerHTML = fruits;
+
+        console.log(fruits)
+
+
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        document.getElementById("demo2").innerHTML = fruits;
+        console.log(fruits)
+    </script>
+</body>
+
+</html>

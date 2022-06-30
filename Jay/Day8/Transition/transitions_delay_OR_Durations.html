@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition_delay</title>
+    <style>
+        .delay {
+            display: flex;
+            align-items: center;
+            background-color: #6363ff;
+            color: white;
+            width: 150px;
+            height: 100px;
+            padding: 20px;
+            transition-delay: 2s;
+        }
+        
+        .delay:hover {
+            width: 300px;
+        }
+        
+        .duration {
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            background: blue;
+            color: white;
+            transition-property: width;
+            /* 1sec. mission start and 1sec. mission end */
+            transition-duration: 1s;
+        }
+        
+        .duration:hover {
+            width: 300px;
+        }
+        
+        div {
+            color: red;
+        }
+        
+        h1 {
+            color: initial;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ready to start and ready to end -->
+    <div class="delay">
+        Delay show on 2s
+    </div>
+    <h1>Initial</h1>
+    <div class="duration">
+        Durations
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS,Js">
+    <meta name="author" content="Jayant">
+    <title>HTML/CSS</title>
+    <link rel="stylesheet" href="/html/Day2/css/style.css">
+</head>
+
+<body>
+    <fieldset>
+        <!-- get -> visible url
+            post -> not visible url -->
+        <h1 id="head">'<span class="F">F</span>o<span class="r">r</span>m <span class="F">F</span>i<span class="l">l</span>l'</h1>
+        <form action="/html/Day2/next.html" method="post" target="_blank">
+            <b>
+        <label for="fname" >First Name:</label>
+        <input type="email"  id="fname" placeholder="Enter your first name" size="20">
+        <br></br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname"   placeholder="Enter your last name" size="20">
+        </b>
+            <br></br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br></br>
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd">
+            <br></br>
+            <label for="chk">Check Box</label>
+            <input type="checkbox" id="chk">
+            <br></br>
+            <label for="chk">Radio Button</label>
+            <input type="radio" id="chk">
+            <br></br>
+            <label for="fl">fill upload</label>
+            <input ="file" id="chk">
+            <br></br>
+            <h1>Data list</h1>
+            <input list="browers" name="browers">
+            <datalist id="browers">
+            <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+        </datalist>
+            </input>
+            <button type="button" onclick="alert('hello world!')">Enter</button>
+
+            <br></br>
+            <h1>Select Option</h1>
+            <select id="phone_id" name="phone">
+            <option value="realme">realme</option>
+            <option value="vivo">vivo</option>
+            <option value="sumsung">sumsung</option>
+            <option value="oppo">oppo</option>
+             </select>
+            <br></br>
+            <h1>message</h1>
+            <textarea rows="5" cols="20" placeholder="fill your feedback"></textarea>
+            <br></br>
+            <input type="submit" id="chk" onclick="HellloWorld">
+
+        </form>
+    </fieldset>
+</body>
+
+</html>

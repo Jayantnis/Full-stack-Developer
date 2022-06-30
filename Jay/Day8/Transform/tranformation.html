@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformation</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .cont2d,
+        .cont3d {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6,
+        .box7,
+        .box8,
+        .box9,
+        .box10,
+        .box11,
+        .box12,
+        .box13 {
+            padding: 4px;
+            margin-top: 54px;
+            display: flex;
+            transition: all 1s ease-in-out;
+            background-color: rgb(49, 138, 211);
+            border: 2px solid rgb(255, 255, 255);
+            color: white;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            height: 100px;
+            font-size: 40px;
+            width: 200px;
+        }
+        
+        .box1:hover {
+            /*Translate*/
+            transform: translate(30px, 70px);
+        }
+        
+        .box2:hover {
+            /*Rotate*/
+            transform: rotate(360deg);
+        }
+        
+        .box3:hover {
+            /*Scale x and y direction*/
+            transform: Scale(3, 7);
+        }
+        
+        .box4:hover {
+            /*Scale x  direction*/
+            transform: Scalex(3);
+        }
+        
+        .box5:hover {
+            /*Scale y  direction*/
+            transform: scaleY(4);
+        }
+        
+        .box6:hover {
+            /*Skew x,y deg  direction*/
+            transform: Skew(40deg, 70deg);
+        }
+        
+        .box7:hover {
+            transform: skewX(40deg);
+        }
+        
+        .box8:hover {
+            transform: skewY(70deg);
+        }
+        
+        .box9:hover {
+            transform: matrix(1, 2, -1, 1, 80, 80);
+        }
+        
+        .box10:hover {
+            transform: rotateX(70deg);
+        }
+        
+        .box11:hover {
+            transform: rotateY(60deg);
+        }
+        
+        .box12:hover {
+            transform: rotatez(120deg);
+        }
+        
+        .box13:hover {
+            transform: rotate3d(23, 34, 23, 43deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cont2d">
+
+            <h2>Transform 2D &nbsp; </h2>
+            <div class="box1">
+                Translate
+            </div>
+            <div class="box2">
+                Rotate
+            </div>
+
+            <div class="box3">
+                Scale
+            </div>
+            <div class="box4">
+                ScaleX
+            </div>
+            <div class="box5">
+                ScaleY
+            </div>
+            <div class="box6">
+                Skew
+            </div>
+            <div class="box7">
+                SkewX
+            </div>
+            <div class="box8">
+                SkewY
+            </div>
+            <div class="box9">
+                Matrix
+            </div>
+        </div>
+
+        <div class="cont3d">
+            <h2>Transform 3D &nbsp; </h2>
+            <div class="box13">
+                Rotate3D
+            </div>
+            <div class="box10">
+                RotateX
+            </div>
+            <div class="box11">
+                RotateY
+            </div>
+            <div class="box12">
+                RotateZ
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

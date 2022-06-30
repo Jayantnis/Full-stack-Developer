@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 200px;
+            height: 300px;
+        }
+        
+        #a {
+            object-fit: scale-down;
+        }
+        
+        #b {
+            object-fit: fill;
+        }
+        
+        #c {
+            object-fit: contain;
+        }
+        
+        #d {
+            object-fit: cover;
+        }
+        
+        #e {
+            object-fit: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>normal img</h2>
+    <img src="/img/img/63.jpg" alt="Paris">
+    <h2>Using object-fit: none</h2>
+    <img id="e" src="/img/img/63.jpg" alt="Paris">
+    <h2>Using object-fit: scale-down</h2>
+    <img id="a" src="/img/img/63.jpg" alt="Paris">
+    <h2>Using object-fit: fill</h2>
+    <img id="b" src="/img/img/63.jpg" alt="Paris">
+    <h2>Using object-fit: contain</h2>
+    <img id="c" src="/img/img/63.jpg" alt="Paris">
+    <h2>Using object-fit: cover</h2>
+    <img id="d" src="/img/img/63.jpg" alt="Paris">
+
+</body>
+
+</html>

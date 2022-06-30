@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .newspaper {
+            column-count: 3;
+        }
+        
+        div {
+            column-count: 3;
+            height: 100px;
+        }
+        
+        .newspaper1 {
+            column-fill: auto;
+        }
+        
+        .newspaper2 {
+            column-fill: balance;
+        }
+        
+        .newspaper3 {
+            column-gap: 40px;
+        }
+        
+        .newspaper4 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule: 4px double blue;
+        }
+        
+        .newspaper5 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: dotted;
+        }
+        
+        .newspaper6 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: dotted;
+            column-rule-width: 10px;
+        }
+        
+        .newspaper7 {
+            column-count: 3;
+            column-gap: 40px;
+            column-rule-style: dotted;
+            column-rule-width: 10px;
+            column-rule-color: yellow;
+        }
+        
+        .newspaper8 {
+            column-count: 4;
+        }
+        
+        h2 {
+            column-span: all;
+        }
+        
+        .newspaper9 {
+            columns: 100px 3;
+        }
+        
+        .newspaper10 {
+            columns: 50px 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The column-count Property</h1>
+    <p>The column-count property defines the number of columns an element is divided into:</p>
+
+    <div class="newspaper">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+
+    <h1>The column-fill Property</h1>
+
+    <h2>column-fill: auto:</h2>
+    <div class="newspaper1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...
+    </div>
+
+    <h2>column-fill: balance (default):</h2>
+    <div class="newspaper2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat...
+    </div>
+    <h1>The column-gap Property</h1>
+    <p>The column-gap property defines the gap between the columns of the element:</p>
+    <div class="newspaper3">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <h1>The column-rule Property</h1>
+    <p>The column-rule property sets the width, style, and color of the rule between the columns of the element:</p>
+
+    <div class="newspaper4">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <h1>The column-rule-style Property</h1>
+
+    <div class="newspaper5">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <h1>The column-rule-width Property</h1>
+
+    <div class="newspaper6">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+    <h1>The column-rule-color Property</h1>
+
+    <div class="newspaper7">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <div class="newspaper8">
+        <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <h1>The columns Property</h1>
+    <p>The columns property is a shorthand property for column-width and column-count:</p>
+
+    <p><strong>Set the minimum width for each column to 100px, and the maximum number of columns to 3:</strong></p>
+    <div class="newspaper9">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+    <p><strong>Set the minimum width for each column to 50px, and the maximum number of columns to 4:</strong></p>
+    <div class="newspaper10">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+        ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+        augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+        claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+    </div>
+
+</body>
+
+</html>

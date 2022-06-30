@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>The concat() method merges (concatenates) arrays:</p>
+
+    <p id="demo"></p>
+
+    <p id="concets"></p>
+
+    <script>
+        const array1 = ["Cecilie", "Lone"];
+        const array2 = ["Emil", "Tobias", "Linus"];
+        const array3 = ["Robin", "Morgan"];
+
+        const myChildren = array1.concat(array2, array3);
+
+        document.getElementById("demo").innerHTML = myChildren;
+
+        var a = ["Sanjay", "Aman", "Rehaman"];
+        var b = ["Sanjay", "Aman", "Rehaman"];
+        var c = a.concat(b, c);
+        document.write(c + "<h3>");
+
+        var red = ["Sanjay", "Aman", "Rehaman"];
+        var s = red.concat("raj", "eas")
+        document.write(s);
+    </script>
+</body>
+
+</html>

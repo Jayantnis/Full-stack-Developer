@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #ex1 {
+            box-sizing: content-box;
+            /*Default content-box*/
+            width: 300px;
+            height: 100px;
+            padding: 30px;
+            border: 10px solid blue;
+        }
+        
+        #ex2 {
+            box-sizing: border-box;
+            /*Default:border-box*/
+            width: 300px;
+            height: 100px;
+            padding: 30px;
+            border: 10px solid blue;
+        }
+    </style>
+    <title>ES</title>
+</head>
+
+<body>
+
+    <h2>box-sizing:content-box</h2>
+    <div id="ex1">
+        This div has a width of 300px. But the full width is 300px + 20px (left and right border) + 60px (left and right padding) = 380px!
+    </div>
+    <h2>box-sizing:border-box</h2>
+    <div id="ex2">
+        Width and height apply to all parts of the element: content, padding and borders. Here, the full width is 300px, no matter what!
+    </div>
+</body>
+
+</html>

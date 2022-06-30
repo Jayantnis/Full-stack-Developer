@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(6, 166, 206);
+}
+
+.topnav a {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    /* under space recover */
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(61, 227, 152);
+    color: rgb(232, 76, 76);
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(123, 200, 252);
+}
+
+h1 {
+    color: rgb(123, 175, 252);
+}
+
+
+/* special case */
+
+
+/* padding */
+
+fieldset {
+    padding-left: 50px;
+    margin-left: 0px;
+    /* text-align: center; */
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    background: url('./img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* call .-> class , and #->id's */
+
+.f {
+    color: red;
+}
+
+
+/* submit button selection */
+
+table {
+    padding: 20px;
+}
+
+.rest,
+.cancelbtn,
+.signupbtn {
+    background-color: #dee81a;
+    color: rgb(24, 83, 128);
+    padding: 20px;
+    margin: 20px;
+}
+
+.rest:hover,
+.cancelbtn:hover,
+.signupbtn:hover {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Responsive selection */
+
+.box {
+    font-size: 72px;
+    text-align: center;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    display: none;
+}
+
+@media (max-width:500px) {
+    #box-1 {
+        display: block;
+        background-color: rgb(217, 197, 62);
+    }
+}
+
+@media (min-width:600px) and (max-width:800px) {
+    #box-2 {
+        display: block;
+        background-color: blue;
+    }
+}
+
+@media (min-width:700px) and (max-width:900px) {
+    #box-3 {
+        display: block;
+        background-color: cornflowerblue;
+    }
+}
+
+@media (min-width:900px) {
+    #box-4 {
+        display: block;
+        background-color: rgb(141, 223, 141);
+        color: rgb(94, 138, 219);
+    }
+}

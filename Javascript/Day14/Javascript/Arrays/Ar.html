@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays </title>
+
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        var stringArray = ["one", "two", "three"];
+        document.getElementById("demo").innerHTML = stringArray;
+    </script>
+
+    <p id="de"></p>
+    <!-- Declaration can span mutiple line  -->
+    <script>
+        const cars = [
+            "Saab",
+            "Volvo",
+            "BMW"
+        ];
+        document.getElementById("de").innerHTML = cars;
+    </script>
+
+    <p id="d"></p>
+    <script>
+        const car = [];
+        cars[0] = "Saa";
+        cars[1] = "Vol";
+        cars[2] = "BM";
+        document.getElementById("d").innerHTML = cars;
+    </script>
+
+
+    <!-- Assign values to it -->
+    <p id="reyo"></p>
+    <script>
+        const ca = new Array("saa", "vo", "yooh");
+        document.getElementById("reyo").innerHTML = ca;
+    </script>
+
+    <!-- Accessing Arrays elements -->
+    <p id="e"></p>
+
+    <script>
+        const cs = ["Saab", "Volvo", "BMW"];
+        document.getElementById("e").innerHTML = cs[0];
+    </script>
+
+    <p id="arrayobj"></p>
+
+    <script>
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 46
+        };
+        document.getElementById("arrayobj").innerHTML = person.firstName;
+    </script>
+
+    <script>
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        let text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+
+        function myFunction(value) {
+            text += "<li>" + value + "</li>";
+        }
+    </script>
+
+    <!-- without using push  -->
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="jd"></p>
+
+    <script>
+        const fr = ["Banana", "Orange", "Apple"];
+        document.getElementById("demo").innerHTML = fr;
+
+        function myFunction() {
+            fr[fr.length] = "Lemon";
+            document.getElementById("demo").innerHTML = fr;
+        }
+
+        let type = typeof fr;
+        document.getElementById()
+    </script>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const f = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = f.shift();
+        document.getElementById("demo2").innerHTML = f;
+    </script>
+
+</body>
+
+</html>

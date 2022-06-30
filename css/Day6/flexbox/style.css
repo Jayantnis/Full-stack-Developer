@@ -1,0 +1,44 @@
+.fcontainer {
+    display: flex;
+    border: 2px solid grey;
+    height: 49vh;
+    flex-direction: row;
+    /* justify-content: ; */
+}
+
+.fitem {
+    background-color: red;
+    border: 2px solid black;
+    margin: 12px;
+    width: 12vh;
+    height: 12vh;
+}
+
+.fcolum {
+    display: flex;
+    border: 2px solid rgb(233, 172, 172);
+    height: 49vh;
+    flex-direction: column;
+    /* space between align start and end equal margin  */
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fcolum-re {
+    display: flex;
+    float: left;
+    border: 2px solid rgb(246, 80, 80);
+    height: 49vh;
+    /* equal space state in margin */
+    align-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.frow-re {
+    display: flex;
+    border: 2px solid hsl(125, 100%, 64%);
+    height: 49vh;
+    flex-direction: row-reverse;
+    /* float: left; */
+    /* flex-grow: unset; */
+}

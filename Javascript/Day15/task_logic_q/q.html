@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h1>playlist</h1>
+    <h4> Levi's playlist contains 3 songs named A,B, and C, each of duration exactly X minutes. Levi generally plays these 3 songs in loop, i.e, A -> B- > C-> A-> B ->C -> A ->…'</h4>
+    <form>
+        <label for="a">Input N</label>
+        <input type="number" id="a" name="a"><br><br>
+        <label for="inB">Input X</label>
+        <input type="number" id="b" name="b">
+        <br><br>
+        <button onclick="add()">Add</button>
+    </form>
+
+    <script>
+        function add() {
+            var N = document.getElementById('a').value;
+            var X = document.getElementById('b').value;
+
+            let s = (parseInt(N) / (3 * parseInt(X)));
+            s = ~~s; //remove float values
+            alert(s);
+        }
+    </script>
+
+</body>
+
+</html>
