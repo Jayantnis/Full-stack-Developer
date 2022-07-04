@@ -1,2 +1,0 @@
-name = jayantn nishad
-class = Hello this is text file 

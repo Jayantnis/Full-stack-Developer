@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>which type of write events</title>
+</head>
+
+<body>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+
+    <button onclick="this.innerHTML=Date()">This time </button>
+
+    <button onclick="displayData()">The access</button>
+    <p id="dem"></p>
+
+    <script>
+        function displayData() {
+            document.getElementById("dem").innerHTML = Date();
+        }
+    </script>
+</body>
+
+</html>

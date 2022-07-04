@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListeners</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <script src="./"></script> -->
+</head>
+
+<body>
+    <!-- addEventListeners(event,function ,usecapture) -->
+    <button type="btn" class="btn btn-primary" id="btns">Gooo</button>
+    <p id="content"></p>
+    <script>
+        document.getElementById("btns").addEventListener("click", read);
+
+        function read() {
+            document.getElementById('content').innerHTML = "Hello World" + "<br>" + "Welcome to the  addEventListener";
+        }
+    </script>
+
+</body>
+
+</html>

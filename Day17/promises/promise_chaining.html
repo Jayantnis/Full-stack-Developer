@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generateNumber(num) {
+            return new Promise((resolve, myreject) => {
+                setTimeout(() => {
+                    if (num > 10) {
+                        resolve(num);
+                    } else {
+                        myreject(num);
+                    }
+                }, 3 * 1000);
+            });
+        }
+
+        function myreject(result) {
+            console.log(result);
+            alert(result);
+        }
+        generateNumber(10)
+            .then((result, error) => {
+                console.log(result);
+                console.log(error);
+                alert(error);
+                return generateNumber(result * 2);
+            })
+            .then((result) => {
+                console.log(result);
+                return generateNumber(result * 3);
+            })
+            .then((result) => console.log(result));
+    </script>
+</body>
+
+</html>

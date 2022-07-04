@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 100px;
+            background-color: cornsilk;
+        }
+        
+        #mydiv {
+            padding: 50px;
+            margin: 5px;
+            background-color: blue;
+        }
+        
+        button {
+            padding: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mydiv">
+        <button id="btn">Click me</button>
+    </div>
+    <script>
+        let d = document.getElementById("mydiv");
+        let s = document.getElementById("btn");
+
+        s.addEventListener('click', btnclick); //false bubbling childer first than parent  
+        d.addEventListener('click', divclick);
+        document.body.addEventListener('click', bodyClicked);
+
+        function btnclick(estop) {
+            console.log("Button Click");
+            estop.stopPropagation();
+        }
+
+        function divclick() {
+            console.log("div click.. ");
+        }
+
+        function bodyClicked() {
+            console.log("body Click");
+        }
+    </script>
+</body>
+
+</html>
