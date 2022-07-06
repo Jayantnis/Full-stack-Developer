@@ -28,7 +28,7 @@
         let s = document.getElementById("btn");
 
         s.addEventListener('click', btnclick, true); //true bubbling childer first than parent  
-        d.addEventListener('click', divclick, true); //ture
+        d.addEventListener('click', divclick); //ture
         document.body.addEventListener('click', bodyClicked, true);
 
         function btnclick() {

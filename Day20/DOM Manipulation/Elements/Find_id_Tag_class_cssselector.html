@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Elements by id</title>
+    <script src="./read.js"></script>
+</head>
+
+<body>
+    <p id="in">that data reading </p>
+    <p id="ou">get data</p>
+    <script>
+        const e = document.getElementById('in');
+
+        document.getElementById('ou').innerHTML = "The text from the intro " + e.innerHTML;
+    </script>
+
+    <p>This data is access by TAg</p>
+    <p id="u">tag name power</p>
+    <script>
+        const es = document.getElementsByTagName("p");
+        document.getElementById("u").innerHTML = 'The text in First paragraph ' + es[0].innerHTML;
+    </script>
+
+    <p>This is class name access power set</p>
+    <p class="read">This is assing access data prototype</p>
+    <script>
+        const read = document.getElementsByClassName("p");
+        document.getElementById("read").innerHTML = 'The text in ClassName finded ' + read[0].innerHTML;
+    </script>
+
+
+    <p class="intro">Hello World!.</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+
+    <p id="demo"></p>
+
+    <script>
+        const x = document.querySelectorAll("p.intro");
+        document.getElementById("demo").innerHTML =
+            'The first paragraph (index 0) with class="intro" is: ' + x[0].innerHTML;
+    </script>
+
+
+    <form id="frm1" action="">
+        firstName: <input type="text" name="fn" value="read"><br> lastName: <input type="text" name="ln" value="passw"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p id="dans"></p>
+    <script>
+        const x1 = document.forms["frm1"];
+        let text = "";
+        for (let i = 0; i < x.length; i++) {
+            text += x1.elements[i].value + "<br>";
+        }1
+        document.getElementById('dans').innerHTML = text;
+    </script>
+</body>
+
+</html>

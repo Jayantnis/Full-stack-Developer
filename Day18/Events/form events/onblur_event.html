@@ -1,23 +1,22 @@
-<!doctype html>
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-<head>
+<body>
+
+    Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
     <script>
-        function focused() {
-            var e = document.getElementById('inp');
-            if (confirm('Got it?')) {
-                e.blur();
-            }
+        function focusFunction() {
+            // Focus = Changes the background color of input to yellow
+            document.getElementById("myInput").style.background = "yellow";
+        }
+
+        function blurFunction() {
+            // No focus = Changes the background color of input to red
+            document.getElementById("myInput").style.background = "red";
         }
     </script>
-</head>
 
-<body>
-    <p>Take the focus into the input box below:</p>
-
-    <input type="text" onblur="alert(this.value)">
-    <!-- <input id="inp" onfocus="focused()"> -->
 </body>
 
 </html>

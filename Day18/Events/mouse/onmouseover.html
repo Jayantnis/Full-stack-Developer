@@ -7,12 +7,15 @@
 
 <body>
     <script language="Javascript" type="text/Javascript">
-        function mouseoverevent() { alert("This is JavaTpoint"); } function mouseover() { alert("Requesting score"); }
+        function mouseoverevent() { alert("This is JavaTpoint"); } function mouseover() { alert("Requesting score"); } function myfun(){ var x=document.getElementById("f"); x.value=x.value.toUpperCase(); }
+
     </script>
 
     <p onmouseover="mouseoverevent()">
         complete task over event , Keep cursor over me</p>
+
     <div type="btn" class="btn btn-primary" onmouseover="mouseover()">complete </div>
+    Enter your name: <input type="text" id="f" onkeyup="myfun()">
 
 </body>
 

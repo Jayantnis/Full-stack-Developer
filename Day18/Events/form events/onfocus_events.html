@@ -1,20 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-<head>
+<body>
+
+
+    <form id="myForm">
+        Focus
+        <input type="text" id="myInput">
+    </form>
+
     <script>
-        function focused() {
-            var e = document.getElementById('inp');
-            if (confirm('Got it?')) {
-                e.blur();
-            }
+        var x = document.getElementById("myForm");
+        x.addEventListener("focus", myFocusFunction, true);
+        x.addEventListener("blur", myBlurFunction, true);
+
+        function myFocusFunction() {
+            document.getElementById("myInput").style.backgroundColor = "yellow";
+        }
+
+        function myBlurFunction() {
+            document.getElementById("myInput").style.backgroundColor = "";
         }
     </script>
-</head>
 
-<body>
-    <p>Take the focus into the input box below:</p>
-    <input id="inp" onfocus="focused()">
 </body>
 
 </html>
