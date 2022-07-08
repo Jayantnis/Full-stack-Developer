@@ -1,0 +1,1 @@
+var nam:string="SDf";
