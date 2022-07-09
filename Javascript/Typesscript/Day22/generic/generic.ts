@@ -1,4 +1,4 @@
-function createPairs<S,T>(v1:S,v2:T):[S,T]{
+function createPairs<s,n>(v1:s,v2:n):[s,n]{
 return [v1,v2];
 }
 console.log(createPairs<string,number>('hello',42));
@@ -41,7 +41,9 @@ console.log(values.tostring);
 
 
 // Extends 
-function createlogged<S extends string | number ,T extends string | number>(v1:S,v2:T):[S,T]{
+function createlogged<S extends string | number ,T extends string | number>
+(v1:S,v2:T):[S,T]
+{
     console.log(`creating pair : v1=${v1} , v2=${v2}`);
     return [v1,v2];
 }

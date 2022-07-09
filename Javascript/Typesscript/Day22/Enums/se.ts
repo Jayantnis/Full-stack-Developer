@@ -22,4 +22,10 @@ enum createDirectional
     BadRequest=3444
  }
 
+ enum Role{
+    admin="admin",
+    superadmin="superadmin",
+    staf="staf"
+ }
+
  console.log(statusCodeP.Notfound);

@@ -6,7 +6,8 @@ console.log(Re())
 
 // void return types
 // the type void can be used to indicate a functions doesn't return any value
-function printd():void{
+function printd():void
+{
     console.log('Hello !');
 }
 function mutiply(a:number,b: number)

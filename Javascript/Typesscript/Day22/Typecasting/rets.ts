@@ -1,4 +1,4 @@
-// //typecasting 
-// let x: unknown = 'hello';
+//typecasting 
+let xdss: unknown = 'hello';
 
-// console.log((x as string).length);
+console.log((xdss as string).length);
