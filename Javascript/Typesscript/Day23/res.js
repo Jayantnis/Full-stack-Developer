@@ -35,6 +35,6 @@ let x = [{
 }]
 console.log(x[0].overrideDefaultWithdrawnInterests[0].monthlyEarningWithdrawls.monthlyEarningWithdrawls[0].year);
 
-console.log(x[0].overrideDefaultWithdrawnInterests[0].monthlyEarningWithdrawls.monthlyEarningWithdrawls[0].monthlyEarningWithdrawlPercentages[0].month);
+console.log(x[0].overrideDefaultWithdrawnInterests[0].monthlyEarningWithdrawls.monthlyEarningWithdrawls[0].monthlyEarningWithdrawlPercentages[1].month);
 
 console.log(x[0].overrideDefaultWithdrawnInterests[0].monthlyEarningWithdrawls.monthlyEarningWithdrawls[0].monthlyEarningWithdrawlPercentages[0].compoundingValue);
