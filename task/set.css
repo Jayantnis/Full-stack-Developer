@@ -1,0 +1,17 @@
+th,
+td {
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    margin: 3px;
+    /* padding-inline-start: 4px; */
+}
+
+table {
+    text-align: center;
+}
+
+tr th {
+    width: 78px;
+}
+
+i {}
