@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 
@@ -49,4 +50,57 @@
     </script>
 </body>
 
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a47f07c656.js" crossorigin="anonymous"></script>
+
+    <style>
+        .rotate {
+            /* -moz-transition: all .5s linear; */
+            /* -webkit-transition: all .5s linear; */
+            transition: all .5s linear;
+        }
+        
+        .rotate.down {
+            /* -moz-transform: rotate(90deg); */
+            /* -webkit-transform: rotate(90deg); */
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fa fa-chevron-right rotate" id="d" onclick="showHtmlDiv()"></div>
+    <div id="html-show">
+        <p class="text-html" id="htmlContent">This is content
+        </p>
+    </div>
+
+    <script>
+        function showHtmlDiv() {
+            var htmlShow = document.getElementById("html-show");
+            var s = document.getElementById("d");
+            if (htmlShow.style.display === "none") {
+                htmlShow.style.display = "block";
+                s.style.transform = "rotate(90deg)";
+            } else {
+                htmlShow.style.display = "none";
+                s.style.transform = "rotate(0deg)";
+            }
+        }
+        $(".rotate").click(function() {
+            $(this).toggleClass("down");
+        })
+    </script>
+</body>
+
+>>>>>>> c7b222b4942d88456dfefe2a7ce02cee7533b0d2
 </html>
