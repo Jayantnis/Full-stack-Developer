@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Table Set</title>
+    <link rel="stylesheet" href="./e.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a47f07c656.js" crossorigin="anonymous"></script>
+
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-radius: 56px;
+            margin: 10px;
+            padding: 10px;
+            align-items: center;
+        }
+        
+        #open {
+            color: aqua;
+        }
+        /* set close btn margin */
+        
+        #close {
+            /* display: flex; */
+            color: gold;
+            margin-left: 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="table table-bordered">
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td><i id="open" onclick="func_open()" class="fa-solid fa-arrow-up"></i> Maria Anders &nbsp;
+                <div id="content"></div>
+                <i id="close" onclick="func_close()" class="fa-solid fa-arrow-up"></i>
+            </td>
+
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td> Chang</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td> Moctezuma</td>
+            <td>Francisco Chang</td>
+            <td>Mex</td>
+        </tr>
+        <tr>
+            <td> comercial </td>
+            <td>Frao Chang</td>
+            <td>Mico</td>
+        </tr>
+    </table>
+
+
+    <script>
+        const content_box = document.getElementById('content');
+        const close_btn = document.getElementById('close');
+        const open_btn = document.getElementById('open');
+        close_btn.style.display = "none";
+        open_btn.style.display = "inline-block";
+
+        function func_open() {
+
+            close_btn.style.display = "block";
+            content_box.style.display = "block";
+            //refernce block check remove below
+            // open_btn.style.display = "block";
+
+            open_btn.style.display = "inline-block";
+
+
+            content_box.innerText = `Name : jay\n Subject : web`;
+
+            open_btn.style.transform = "rotate(180deg)"
+            close_btn.style.transform = "rotate(0deg)"
+
+        }
+
+        function func_close() {
+            open_btn.style.transform = "rotate(0deg)";
+            content_box.style.display = "none";
+            close_btn.style.display = "none";
+            // this is check remove  below 
+            // open_btn.style.display = "inline-block";
+        }
+    </script>
+</body>
+
+</html>
