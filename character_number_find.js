@@ -1,5 +1,4 @@
 const string = "Hello Deepak Sarwa this is dotnet"; //"This is string";
-const storeData = new Set();
 const mapadd = new Map();
 for (let k = 0; k < string.length; k++) {
     var count_string = 0;
