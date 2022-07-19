@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <input type="text" value="jay">
+    <button>click</button>
+    <script>
+        let inp = document.querySelector('input');
+        btn = document.querySelector('button');
+
+        btn.onclick = () => {
+            let currentvalue = inp.value;
+            let inititalvalue = inp.getAttribute('value');
+            console.log(`initital value=${inititalvalue}`);
+            console.log(`current value=${currentvalue}`);
+        }
+    </script>
+</body>
+
+</html>

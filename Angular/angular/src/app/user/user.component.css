@@ -1,0 +1,9 @@
+.box {
+    width: 100px;
+    height: 120px;
+    background: skyblue;
+}
+
+.border {
+    border: 2px solid black;
+}

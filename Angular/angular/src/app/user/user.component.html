@@ -1,1 +1,56 @@
+<!-- Interpolation -->
+<h1>{{title}}</h1>
+<h2>{{fnf()}}</h2>
 <p>Hello Go </p>
+
+<!-- property binding -->
+<input type="text" [value]="name">
+<img [src]="urls" alt="">
+
+<!-- Attribute Biding  -->
+<!-- exception peroperty ^ error create in
+ resolve colspan -> DOM not available -->
+<br><br/>
+<table border="1">
+    <tr>
+        <!-- error this line  -->
+        <!-- <td [colspan]="2">Big</td> -->
+        <!-- attribute binding applies not property binding use-->
+        <td [attr.colspan]="2">Big</td>
+        <!-- colspan dosn't representation in DOM -->
+    </tr>
+    <tr>
+        <td>one</td>
+        <td>two</td>
+    </tr>
+</table>
+<br>
+<!-- error -->
+<!-- <button [aria-label]="btn">Pay</button> -->
+<button [attr.aria-label]="btn">Pay</button>
+
+
+<!-- class Binding :
+[class]='box' It should be 'box' (inside single quotes)  -->
+<!-- <div [class]=" 'box' "></div> -->
+<div [class]="mycls"></div>
+<!-- 2nd case  coditions -->
+<div class="box" [class.border]="myclss1"></div>
+
+<!-- style Binding -->
+<h1 [style.color]="'red'">Hello</h1>
+<!-- but without use single quotes tri-> expression -->
+<h1 [style.color]="readok?'red':'green'">Hello</h1>
+<h1 [style.background-color]="'skyblue'">Hello</h1>
+
+
+
+
+<!-- event bidning -->
+<button (click)="onClick()">clickme</button>
+<!--  -->
+<br><br/>
+<button (click)="power()">click</button>
+<!-- <span>{{name}}</span> -->
+<br><br/>
+<input (keyup)="event($event)" /> {{uname}}
