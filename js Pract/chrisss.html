@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <p>Chris is hosting a party at his house and N people are invited to it. Everyone has arrived and they are eager to make a group and chit-chat. The ith person prefers to be in a group of exactly Pi people (including himself). A person who is not in a
+        group of preferred size gets upset. Find whether Chris would be able to assign every person to a group such that everyone remains happy.
+    </p>
+    <h2>OUTPUT</h2>
+    <h1 id="ans"></h1>
+    <script>
+        let t = parseInt(prompt('Enter Numbers of Input'));
+        let a = [],
+            refernce = Math.floor(t / 2);
+
+        for (let r = 0; r < t; r++) {
+            //   let x;
+            a[r] = parseInt(prompt("Array values"));
+
+        }
+        if (a[0] == a[refernce] && a[refernce - 1] == a[a.length - 1]) {
+            document.getElementById('ans').innerHTML = "YES";
+        } else {
+            document.getElementById('ans').innerHTML = "No";
+
+        }
+    </script>
+</body>
+
+</html>

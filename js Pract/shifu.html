@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>set qu.</title>
+
+</head>
+
+<body>
+    <h1 id="ans"></h1>
+
+    <!-- add shifu js -->
+    <script>
+        let x = parseInt(prompt('Enter x')),
+            y = parseInt(prompt("Enter y")),
+            z = parseInt(prompt('Enter z'));
+
+        if (x < y && x < z && y > z || z < x) {
+
+            let set = x * y;
+            let remind_even = Math.floor(x / 3);
+            if (x % 3 == 0) {
+
+                let sum = set + z * (remind_even - 1);
+                document.getElementById('ans').innerHTML = sum;
+
+            } else {
+
+                let sum = set + z * (remind_even);
+                document.getElementById('ans').innerHTML = sum;
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
