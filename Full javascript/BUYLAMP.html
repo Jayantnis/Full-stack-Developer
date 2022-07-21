@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <p>An electronics shop sells red and blue lamps. A red lamp costs X rupees and a blue lamp costs Y rupees. Shifu is going to buy exactly N lamps from this shop. Find the minimum amount of money Shifu needs to pay such that at least K of the lamps bought
+        are red. Each test case consists of a single line containing four space-separated integers N,K,X,Y. write a function that accepts N,K,X,Y as parameters and return minimum amount of money Shifu needs to pay such that at least K of the lamps bought
+        are red</p>
+    <h2>OUTPUT</h2>
+    <p id="ans"></p>
+    <script>
+        let x = parseInt(prompt("X Enter value"));
+        let k = parseInt(prompt("k Enter value"));
+        let r = parseInt(prompt("r Enter value"));
+        let b = parseInt(prompt("b Enter value"));
+
+        read(x, k, r, b);
+        var res;
+
+        function read(X, K, R, B) {
+            if (X == K) {
+                res = (K * R);
+            } else {
+                let redn = K * R,
+                    K1 = (X - K),
+                    red = K1 * R,
+                    blue = K1 * B;
+                if (red <= blue) {
+                    res = (redn + red)
+                } else {
+                    res = (redn + blue)
+                }
+            }
+        }
+        document.getElementById('ans').innerHTML = res;
+    </script>
+</body>
+
+</html>
