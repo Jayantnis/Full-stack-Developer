@@ -18,11 +18,8 @@ import {pipesComponent } from './pipes/usd-inr.component';
 // import { Component_Oninit } from './oninit_process/oninit_process.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,user_component, UsdInrPipe,pipesComponent ],
-  imports: [
-    BrowserModule,todo_module_testdecorator,Directivemodule
-  ],
+  declarations: [AppComponent,user_component, UsdInrPipe,pipesComponent],
+  imports: [BrowserModule,todo_module_testdecorator,Directivemodule],
   providers: [],
   bootstrap: [AppComponent]
 })

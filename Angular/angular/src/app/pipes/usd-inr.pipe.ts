@@ -5,12 +5,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class UsdInrPipe implements PipeTransform
 {
   // a:number=3;
-  transform(value:CurrencyPipe):unknown{
+  transform(value:CurrencyPipe):unknown
+  {
     // const price=args;
     // value:CurrencyPipe;
     // // price.tofixed(2);
     //  cur=CurrencyPipe;
-    // let convert=(value*price).toFixed(2);
+    let convert=(value);
     return  value;
   }
 }
