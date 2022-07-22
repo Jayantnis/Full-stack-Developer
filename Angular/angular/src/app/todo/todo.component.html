@@ -1,0 +1,14 @@
+<!-- <h2 {{productID:any=10; }}></h2> -->
+<!-- pipes -->
+<h2>{{value|uppercase}} Hello world</h2>
+<h4>{{date}}</h4>
+<!-- without pipe use -->
+<h4>{{date|date}}</h4>
+<!-- pipe data parameter use  -->
+<h4>{{date|date:'short'}}</h4>
+<h4>{{date|date:'shortTime'|uppercase}}</h4>
+
+<!-- <h2>{{myin}}</h2> -->
+<!-- send child to parent component -->
+<!-- output -->
+<button (click)="senddata()">Send Data</button>

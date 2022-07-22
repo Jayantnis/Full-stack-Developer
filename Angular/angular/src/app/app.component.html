@@ -1,3 +1,6 @@
+<!-- Decorator and Directives{myinput}="inputvariable"  -->
+<app-todo [myin]="InVar" (myout)="getdata($event)"></app-todo>
+<!-- output functions allow-->
 <!-- <app-root>{{name}}</app-root>
  -->
 <!-- Interpolation -->
@@ -6,12 +9,13 @@
 <p>{{fun()}}</p>
 
 
-<!--   Biding-->
+<!-- properety  biding-->
 <app-user></app-user>
 
+<h1>-------Directives Points--------</h1>
+<app-directives_set></app-directives_set>
 
-<!-- hooksLifecycleComponent -->
-<!-- input box change show on input porperty -->
-<input type="text" name="d" #valuef>//pass template variable
-<button (click)="submitdata(valuef)">Submit</button>
-<app-hooksLifecycle></app-hooksLifecycle>
+<!-- pipe customize -->
+<app-convertion></app-convertion>
+
+<!-- <h3>{{20|usdInr}}</h3> -->

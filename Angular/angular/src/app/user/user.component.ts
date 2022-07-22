@@ -17,16 +17,8 @@ export class user_component
   // {
   //   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
   //   //Add 'implements OnInit' to the class.
-       //alert("ngOnInit called");
+  //   alert("ngOnInit called");
   // }
-
-// use Interpolation
-  title="Hello sir this is Interpolation"
-  fnf()
-  {
-  console.log("HELLO SIR");
-  }
-
 
   // user use prperety binding
   name:string='Jayant';
@@ -42,21 +34,12 @@ export class user_component
   readok=true;
 
   // use click biding
-  onClick()
-  {
+  onClick(){
     console.log('yes i am here');
   }
 
-  power()
-  {
-    console.log("ACCESS function")
-  }
-
-  // Two way event binding
   uname:string='';
-  event($event:any)
-  {
-  console.log($event)
+  event($event:any){
+console.log($event)
   }
-
 }
