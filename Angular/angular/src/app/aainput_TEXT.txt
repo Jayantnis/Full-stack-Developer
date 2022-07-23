@@ -1,0 +1,37 @@
+<!-- Decorator and Directives{myinput}="inputvariable"  -->
+<!-- <app-todo [myin]="InVar" (myout)="getdata($event)"></app-todo> -->
+<!-- output functions allow-->
+<!-- <app-root>{{name}}</app-root>
+ -->
+<!-- Interpolation -->
+<!-- <h1>{{name}}</h1>
+<img src="{{url}}">
+<p>{{fun()}}</p> -->
+
+
+<!-- properety  biding-->
+<!-- <app-user></app-user>
+
+<h1>-------Directives Points--------</h1>
+<app-directives_set></app-directives_set> -->
+
+<!-- pipe customize -->
+
+<!-- <p>{{78.09|p:5:'EUR'}}</p> -->
+<!-- <p>{{a | p:5:us}}</p>
+<p>{{ a | currency }}</p> -->
+<!-- <p>{{ a | p:'EUR':'Symobol'}}</p> -->
+<!-- <p>{{a | currency:'CAD':'symbol'}}</p>
+
+<p>{{a |currency:'CAD':'symbol-narrow'}}</p>
+
+<p>{{a |currency:'INR':'symbol-narrow'}}</p>
+
+<p>{{a | currency:'INR':'Indian Rupee'}}</p>
+
+<!-- Directives -->
+<!--<p appHighlight>Highlight me!</p> -->
+
+<!-- two sum input
+-->
+<input type="text">
